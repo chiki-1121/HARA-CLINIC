@@ -24,3 +24,12 @@
 .section-title--reverse::after {
     background: $white;
 }
+
+.section-title__description {
+    font-size: myrem(14);
+    letter-spacing: 0.042em;
+    line-height: calc(34 / 14);
+    font-weight: $bold;
+    margin-top: myrem(30);
+    text-align: center;
+}
