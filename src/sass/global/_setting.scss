@@ -1,0 +1,38 @@
+@use "sass:math";
+
+// インナー幅設定
+// コンテンツのインナー幅（最も共通の幅が多い部分）
+$inner: 1200px;
+// ※キュンパス幅ではなくインナーの幅を指す
+
+// 余白
+$padding-pc: 25px;
+$padding-sp: 20px;
+
+////////////////////
+// フォント設定
+////////////////////
+
+$logo-font: 'Arial',sans-serif;
+$main-font: YuGothic,'Yu Gothic',sans-serif;
+$sub-font: 'Montserrat',sans-serif;
+// ※検証ツールでしっかり反映されているか確認する
+
+body {
+  font-family: $main-font;
+}
+
+// フォントウェイト
+$regular: 300;
+$normal: 400;
+$semibold: 600;
+$bold: 700;
+
+////////////////////
+// 色の指定
+////////////////////
+
+//色指定（共通性のあるものは出来る限り指定すると良い）
+$black: #333;
+$white: #fff;
+$blue: #4A97C7;
