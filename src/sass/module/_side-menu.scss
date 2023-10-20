@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.side-menu {}
+
+.side-menu__item {}
+
+.side-menu__item img {
+    width: myrem(55);
+    height: myrem(53);
+}

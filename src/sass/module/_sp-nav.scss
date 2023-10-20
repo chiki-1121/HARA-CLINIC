@@ -1,0 +1,16 @@
+@use "global" as *;
+
+.sp-nav {
+    padding-right: $padding-sp;
+    padding-left: $padding-sp;
+    padding-top: myrem(60);
+    padding-bottom: myrem(20);
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+}
