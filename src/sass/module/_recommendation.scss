@@ -1,0 +1,70 @@
+@use "global" as *;
+
+.recommendation {
+    padding: myrem(84) myrem(100) myrem(68);
+    border: 8px solid #F2F2F2;
+    border-radius: myrem(60) 0 0 0;
+}
+
+
+.recommendation__items {
+    margin-top: myrem(28);
+}
+
+.recommendation__item {}
+
+
+.recommendation__heading {
+    font-size: myrem(24);
+    letter-spacing: 0.04em;
+    line-height: calc(34 / 24);
+    font-weight: $bold;
+    align-items: center;
+    display: flex;
+}
+
+.recommendation__heading::before {
+    content: "";
+    background: $blue;
+    width: myrem(9);
+    height: myrem(36);
+    margin-right: myrem(10);
+    display: inline-block;
+}
+
+.recommendation__question {
+    margin-top: myrem(38);
+}
+
+.recommendation__question dt {
+    background: #F2F2F2;
+    padding: myrem(16);
+    border-radius: myrem(20) 0 0 0;
+    font-size: myrem(18);
+    letter-spacing: 0.03em;
+    line-height: calc(32 / 18);
+    font-weight: $bold;
+}
+.recommendation__question dd {
+    font-size: myrem(16);
+    line-height: calc(32 / 16);
+    margin-top: myrem(20);
+}
+
+.recommendation__item:nth-child(2) {
+    margin-top: myrem(40);
+}
+
+.recommendation__list {
+    margin-top: myrem(40);
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(4, 1fr);
+    // grid-template-columns: repeat(2, 1fr);
+    gap: 40px 36px; //縦幅 横幅
+}
+
+.recommendation__list li {
+    border-bottom: 2px dashed #E8E8E8;
+    padding-bottom: myrem(23);
+}

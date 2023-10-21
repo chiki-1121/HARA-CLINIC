@@ -5,13 +5,9 @@
 }
 
 
-.mode__cards {
-    margin-top: myrem(50);
+.mode__items {
+    margin-top: myrem(30);
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 13px 52px; //縦幅 横幅
-}
-
-.mode__card {
-    min-height: myrem(509);
+    grid-template-columns: repeat(3, 1fr);
+    gap: myrem(61); //縦幅 横幅
 }
