@@ -1,0 +1,85 @@
+@use "global" as *;
+
+.price {}
+
+.price__title {}
+
+.section-title {}
+
+.price__heading {
+    margin-top: myrem(33);
+    font-size: myrem(24);
+    letter-spacing: 0.025em;
+    line-height: calc(34 / 24);
+    font-weight: $bold;
+    text-align: center;
+}
+
+.price__list {
+    margin-top: myrem(36);
+}
+
+.price__button a {
+    margin-top: myrem(117);
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    width: myrem(1000);
+    margin: auto;
+    padding: 1rem 4rem;
+    font-weight: bold;
+    border-radius: 10px;
+    color: #27acd9;
+    border: 3px solid #27acd9;
+    box-shadow: 5px 5px #27acd9;
+    transition: 0.3s ease-in-out;
+}
+.price__button a:hover {
+    box-shadow: none;
+    transform: translate(5px, 5px);
+    color: #27acd9;
+}
+
+.price__button img {
+    display: inline-block;
+    width: myrem(32);
+    height: myrem(32);
+}
+
+.price__button span {
+    display: inline-block;
+    vertical-align: middle;
+    padding: myrem(11) myrem(13);
+    color: $white;
+    line-height: 1;
+    position: relative;
+    width: myrem(32);
+    height: myrem(32);
+    transform: translateX(-25%) rotate(45deg);
+    background: $blue;
+    border-radius: myrem(150);
+}
+
+.price__button span::before,
+.price__button span::after {
+    content: '';
+    position: absolute;
+    background: currentColor;
+    border-radius: 0.1em;
+}
+
+.price__button span::before {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0.1em;
+}
+
+.price__button span::after {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 0.1em;
+}
+

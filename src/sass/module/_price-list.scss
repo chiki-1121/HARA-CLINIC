@@ -1,0 +1,58 @@
+@use "global" as *;
+
+.price-list {}
+
+.price-list__title {
+    background: #F2F2F2;
+    text-align: center;
+    font-size: myrem(20);
+    letter-spacing: 0.03em;
+    line-height: calc(62 / 20);
+    font-weight: $bold;
+    margin-bottom: 0;
+}
+
+.price-list__major-heading {
+    line-height: calc(30 / 16);
+    font-weight: $bold;
+    align-items: center;
+}
+
+.price-list__major-heading>div>dt {
+    width: calc(400 / 1200 * 100%);
+    display: flex;
+    align-items: center;
+    padding-left: myrem(100);
+}
+.price-list__major-heading>div>dd {
+    width: calc(800 / 1200 * 100%);
+}
+
+
+.price-list__major-heading>div {
+    display: flex;
+    border-bottom: 1px solid #D0D0D0;
+}
+
+// .price-list__major-heading div>dt {
+//     line-height: calc(30 / 16);
+//     font-weight: $bold;
+// }
+
+.price-list__sub-heading {}
+
+.price-list__sub-heading div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    // gap: 40px 36px; //縦幅 横幅
+    padding: myrem(43) 0;
+}
+
+.price-list__sub-heading div:not(:last-child) {
+    border-bottom: 1px solid #D0D0D0;
+}
+
+.price-list__sub-heading dt,
+.price-list__sub-heading dd {
+    text-align: center;
+}
