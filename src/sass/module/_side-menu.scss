@@ -1,6 +1,17 @@
 @use "global" as *;
 
-.side-menu {}
+.side-menu {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+
+    @include mq('md') {
+        top: auto;
+        bottom: 0;
+        transform: translateY(0);
+    }
+}
 
 .side-menu__item {
     font-size: myrem(14);
@@ -10,6 +21,10 @@
     display: flex;
     flex-direction: column;
     align-items: end;
+
+    @include mq('md') {
+        flex-direction: row;
+    }
 }
 
 .side-menu__item li + li {

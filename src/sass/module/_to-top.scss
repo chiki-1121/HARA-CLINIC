@@ -1,0 +1,80 @@
+@use "global" as *;
+
+// .button_top {
+//     /* ①ボタンの色と文字の色とサイズ */
+//     background-color: orange;
+//     color: white;
+//     font-size: 16px;
+
+//     /* ②ボタンのサイズと角丸 */
+//     width: 80px;
+//     height: 80px;
+//     border-radius: 50%;
+
+//     /* ③次に作る上向きの三角と、TOPの文字の位置を揃えるためのcss */
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     flex-direction: column;
+// }
+
+// .button_top::before {
+//     /* ④絶対必要 */
+//     content: "";
+//     display: block;
+
+//     /* ⑤三角のサイズ */
+//     width: 10px;
+//     height: 10px;
+
+//     /* ⑥三角の線と回転角度 */
+//     border-top: 2px solid white;
+//     border-right: 2px solid white;
+//     transform: rotate(-45deg);
+// }
+
+.button_top {
+    font-family: $sub-font;
+    background-color: $white;
+    color: $blue;
+    font-size: myrem(12);
+    width: myrem(73);
+    height: myrem(73);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid $blue;
+    position: fixed;
+    right: calc(50% - min(48vw, myrem(600)));
+    bottom: myrem(42);
+
+    /* ⑧色が変化する時間 */
+    transition: .3s;
+}
+
+/* ⑦マウスをかざした時に変化する色の指定 */
+.button_top:hover {
+    background-color: $blue;
+    color: $white;
+}
+
+.button_top::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-top: 1px solid $blue;
+    border-right: 1px solid $blue;
+    transform: rotate(-45deg);
+
+    /* ⑩色が変化する時間 */
+    transition: .3s;
+}
+
+/* ⑨マウスをかざした時に変化する色の指定 */
+.button_top:hover::before {
+    border-top: 2px solid $white;
+    border-right: 2px solid $white;
+}

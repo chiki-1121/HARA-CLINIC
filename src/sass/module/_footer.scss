@@ -1,0 +1,48 @@
+@use "global"as *;
+
+.footer {
+    background: $blue;
+    padding-top: myrem(82);
+    padding-bottom: myrem(46);
+}
+
+.footer__flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__top {
+    width: calc(248 / 1200 * 100%);
+}
+
+.footer_logo {
+    color: $white;
+    text-transform: uppercase;
+    font-size: myrem(40);
+    line-height: calc(20 / 12);
+    font-family: $logo-font;
+}
+
+.footer__address {
+    color: $white;
+    font-size: myrem(12);
+    font-weight: $bold;
+    margin-top: myrem(46);
+}
+
+.footer__address a {
+    text-decoration: underline;
+}
+
+.footer__nav {
+    width: calc(826 / 1200 * 100%);
+}
+
+.footer__copy {
+    font-size: myrem(12);
+    line-height: calc(14 / 31);
+    font-weight: $bold;
+    color: $white;
+    margin-top: myrem(86);
+    text-align: center;
+}
