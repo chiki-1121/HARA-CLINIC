@@ -27,24 +27,18 @@
     position: relative;
     width: myrem(1000);
     margin: auto;
-    padding: 1rem 4rem;
+    padding: myrem(53) 0;
     font-weight: bold;
-    border-radius: 10px;
-    color: #27acd9;
-    border: 3px solid #27acd9;
-    box-shadow: 5px 5px #27acd9;
+    color: $blue;
+    box-shadow: 11px 11px #27acd9;
     transition: 0.3s ease-in-out;
+    background: #D9F1FF;
+    border-radius: myrem(60) 0 0 0;
 }
 .price__button a:hover {
     box-shadow: none;
-    transform: translate(5px, 5px);
+    transform: translate(11px, 11px);
     color: #27acd9;
-}
-
-.price__button img {
-    display: inline-block;
-    width: myrem(32);
-    height: myrem(32);
 }
 
 .price__button span {
