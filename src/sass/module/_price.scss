@@ -13,6 +13,10 @@
     line-height: calc(34 / 24);
     font-weight: $bold;
     text-align: center;
+
+    @include mq('md') {
+        font-size: myrem(20);
+    }
 }
 
 .price__list {
@@ -25,7 +29,7 @@
     text-align: center;
     text-decoration: none;
     position: relative;
-    width: myrem(1000);
+    max-width: myrem(1000);
     margin: auto;
     padding: myrem(53) 0;
     font-weight: bold;
@@ -34,11 +38,23 @@
     transition: 0.3s ease-in-out;
     background: #D9F1FF;
     border-radius: myrem(60) 0 0 0;
+    font-size: myrem(24);
+    line-height: calc(29 / 24);
+    letter-spacing: 0.04em;
+
+    @include mq('md') {
+        margin-top: myrem(50);
+        padding: myrem(20) 0;
+        border-radius: myrem(30) 0 0 0;
+        font-size: myrem(18);
+        box-shadow: 8px 8px #87BBDB;
+    }
 }
+
 .price__button a:hover {
     box-shadow: none;
     transform: translate(11px, 11px);
-    // color: #27acd9;
+    opacity: 1;
 }
 
 .price__button span {
@@ -48,6 +64,10 @@
     // color: #333;
     text-decoration: none;
     right: 6%;
+
+    @include mq('md') {
+        top: 25%;
+    }
 }
 
 .price__button span:before {
@@ -58,7 +78,7 @@
     border-radius: 50%;
     position: absolute;
     top: 50%;
-    left: -3px;
+    left: myrem(-18);
     // margin-top: -9px;
 }
 
@@ -71,7 +91,7 @@
     border-right: solid 2px #fff;
     position: absolute;
     top: myrem(10);
-    left: myrem(6);
+    left: myrem(-10);
     // margin-top: -4px;
     transform: rotate(45deg);
 }

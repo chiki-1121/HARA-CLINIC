@@ -1,12 +1,20 @@
 @use "global" as *;
 
 .more__items {
-    margin-top: myrem(50);
+    margin-top: myrem(44);
+    
+    @include mq('md') {
+        margin-top: myrem(30);
+    }
 }
 
 .more__item:first-child {
     border-top: 2px dashed #E8E8E8;
     padding-top: myrem(40);
+
+    @include mq('md') {
+        padding-top: myrem(25);
+    }
 }
 
 
@@ -16,6 +24,10 @@
     display: flex;
     justify-content: start;
     align-items: center;
+
+    @include mq('md') {
+        padding-bottom: myrem(25);
+    }
 }
 
 .more__item+.more__item {
@@ -26,6 +38,11 @@
     width: myrem(326);
     height: myrem(326);
     border-radius: myrem(150);
+
+    @include mq('md') {
+        width: 30%;
+        height: auto;
+    }
 }
 
 .more__img img {
@@ -34,6 +51,11 @@
 
 .more__description {
     margin-left: myrem(40);
+
+    @include mq('md') {
+        flex: 1;
+        margin-left: myrem(10);
+    }
 }
 
 .more__heading {
@@ -41,9 +63,18 @@
     letter-spacing: 0.03em;
     line-height: calc(34 / 20);
     font-weight: $bold;
+
+    @include mq('md') {
+        font-size: myrem(16);
+    }
 }
 
 .more__text {
     line-height: calc(32 / 16);
     margin-top: myrem(34);
+
+    @include mq('md') {
+        font-size: myrem(14);
+        margin-top: myrem(15);
+    }
 }

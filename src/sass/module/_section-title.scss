@@ -7,6 +7,10 @@
     font-weight: $bold;
     text-align: center;
     position: relative;
+
+    @include mq('md') {
+        font-size: myrem(20);
+    }
 }
 
 .section-title::after {
@@ -14,7 +18,7 @@
     width: myrem(60);
     height: myrem(3);
     background: $blue;
-    margin-top: myrem(13);
+    margin-top: myrem(5);
     display: block;
     position: absolute;
     left: 50%;
@@ -30,6 +34,11 @@
     letter-spacing: 0.042em;
     line-height: calc(34 / 14);
     font-weight: $bold;
-    margin-top: myrem(30);
+    margin-top: myrem(24);
     text-align: center;
+
+    @include mq('md') {
+        font-size: myrem(12);
+        margin-top: myrem(15);
+    }
 }

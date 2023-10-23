@@ -6,8 +6,14 @@
 
 
 .mode__items {
-    margin-top: myrem(30);
+    margin-top: myrem(20);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    place-content: center;
     gap: myrem(61); //縦幅 横幅
+
+    @include mq('md') {
+        grid-template-columns: repeat(auto-fit, myrem(300));
+        margin-top: myrem(30);
+    }
 }

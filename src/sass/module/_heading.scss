@@ -13,6 +13,13 @@
     text-align: center;
     display: block;
     position: relative;
+    padding-left: myrem(46);
+
+    @include mq('md') {
+        font-size: myrem(14);
+        padding-left: myrem(20);
+    }
+
 }
 
 .heading__title span{
@@ -22,45 +29,70 @@
     line-height: calc(54 / 44);
     font-weight: $semibold;
     margin-top: myrem(13);
+
+    @include mq('md') {
+        font-size: myrem(30);
+        margin-top: myrem(5);
+    }
 }
 
 .heading__title span:first-letter {
     color: $blue;
 }
 
-.heading__title::before {
+.heading__title span::before {
     content: "";
     width: myrem(7);
     height: myrem(50);
     background-color: $blue;
     transform: rotate(30deg);
     display: inline-block;
-    position: absolute;
-    bottom: 0;
-    left: 35%;
+    // position: absolute;
+    bottom: myrem(5);
+    left: 37%;
+
+    @include mq('md') {
+        height: 30px;
+        left: 19%;
+        width: 4px;
+    }
 }
 
 .heading__category {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: myrem(20); //縦幅 横幅
+    // grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, myrem(285));
+    place-content: center;
+    gap: myrem(23) myrem(20); //縦幅 横幅
     margin-top: myrem(80);
+
+    @include mq('md') {
+        margin-top: myrem(40);
+        gap: myrem(10);
+    }
 }
 
 .heading__category li a {
     width: myrem(285);
-    padding: myrem(28) 0 myrem(28) myrem(20);
+    padding: myrem(23) 0 myrem(23) myrem(20);
     border: 2px solid $blue;
     border-radius: myrem(35);
     display: block;
     font-size: myrem(14);
     line-height: calc(17 / 14);
     font-weight: $bold;
+
+    @include mq('md') {
+        font-size: myrem(12);
+        padding: myrem(10);
+        border: 1px solid $blue;
+    }
 }
 
 .heading__category li {
     display: flex;
     position: relative;
+    width: myrem(285);
 }
 
 .heading__category span {

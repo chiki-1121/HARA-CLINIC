@@ -5,7 +5,7 @@
 .effect-card {}
 
 .effect-card__img {
-    aspect-ratio: 474 / 250;
+    aspect-ratio: 474 / 259;
     overflow: hidden;
     border-bottom: 4px solid $blue;
 }
@@ -17,7 +17,7 @@
 }
 
 .effect-card__heading {
-    margin-top: myrem(22);
+    margin-top: myrem(10);
     display: flex;
     align-items: center;
 }
@@ -28,20 +28,34 @@
     line-height: calc(39 / 32);
     font-weight: $bold;
     color: $blue;
+
+    @include mq('md') {
+        font-size: myrem(22);
+        line-height: 1.5;
+    }
 }
 
 .effect-card__title {
     font-family: $main-font;
     font-size: myrem(20);
-    letter-spacing: 0.3em;
-    line-height: calc(35 / 60);
+    letter-spacing: 0.03em;
+    line-height: calc(35 / 20);
     font-weight: $bold;
     margin-left: myrem(22);
+
+    @include mq('md') {
+        font-size: myrem(18);
+        line-height: 1.5;
+    }
 }
 
 .effect-card__text {
-    margin-top: myrem(24);
+    margin-top: myrem(10);
     font-family: $main-font;
     font-size: myrem(14);
     line-height: calc(28 / 14);
+
+    @include mq('md') {
+        margin-top: myrem(4);
+    }
 }

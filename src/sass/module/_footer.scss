@@ -4,11 +4,20 @@
     background: $blue;
     padding-top: myrem(82);
     padding-bottom: myrem(46);
+
+    @include mq('md') {
+        padding-top: myrem(40);
+        padding-bottom: myrem(100);
+    }
 }
 
 .footer__flex {
     display: flex;
     justify-content: space-between;
+
+    @include mq('md') {
+        flex-direction: column;
+    }
 }
 
 .footer__top {
@@ -21,13 +30,21 @@
     font-size: myrem(40);
     line-height: calc(20 / 12);
     font-family: $logo-font;
+
+    @include mq('md') {
+        font-size: myrem(24);
+    }
 }
 
 .footer__address {
     color: $white;
     font-size: myrem(12);
     font-weight: $bold;
-    margin-top: myrem(46);
+    margin-top: myrem(28);
+
+    @include mq('md') {
+        margin-top: myrem(20);
+    }
 }
 
 .footer__address a {
@@ -36,6 +53,10 @@
 
 .footer__nav {
     width: calc(826 / 1200 * 100%);
+
+    @include mq('md') {
+        width: 100%;
+    }
 }
 
 .footer__copy {
@@ -45,4 +66,8 @@
     color: $white;
     margin-top: myrem(86);
     text-align: center;
+
+    @include mq('md') {
+        margin-top: myrem(30);
+    }
 }

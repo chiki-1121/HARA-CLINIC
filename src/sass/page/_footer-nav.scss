@@ -3,6 +3,34 @@
 .footer-nav {
     display: flex;
     justify-content: space-between;
+
+    @include mq('md') {
+        flex-direction: column;
+    }
+}
+
+.footer-nav__box{
+    @include mq('md') {
+        margin-top: myrem(30);
+    }
+}
+
+.footer-nav__box>ul {
+    @include mq('md') {
+        display: grid;
+        grid-auto-flow: column;
+        gap: myrem(10) 0;
+    }
+}
+
+.footer-nav__box--sp>ul {
+    @include mq('md') {
+        grid-template-rows: repeat(5, 1fr);
+    }
+}
+
+.footer-nav__box--sp li+li {
+    margin-top: myrem(20);
 }
 
 .footer-nav__box li {
@@ -13,42 +41,80 @@
 }
 
 .footer-nav__box li+li {
-    margin-top: myrem(18);
+    margin-top: myrem(16);
+
+    @include mq('md') {
+        margin-top: 0;
+    }
 }
 
 
 .footer-nav__box--center {
     width: calc(463 / 828 * 100%);
+
+    @include mq('md') {
+        width: 100%;
+    }
 }
 
-.footer-nav__box--smal li {
+.footer-nav__box--small ul {
+    @include mq('md') {
+        display: block;
+    }
+}
+
+.footer-nav__box--small li {
     font-size: myrem(12);
 }
+
+.footer-nav__box--small li+li {
+    @include mq('md') {
+        margin-top: myrem(20);
+    }
+}
+
+// .footer-nav__box--small>ul {
+//     @include mq('md') {
+//         display: flex;
+//     }
+// }
 
 .footer-nav__list {
     display: flex;
     justify-content: space-between;
-    margin-top: myrem(22);
+    margin-top: myrem(19);
+
+    @include mq('md') {
+        flex-direction: column;
+        margin-top: myrem(10);
+    }
 }
 
 .footer-nav__list>li+li {
     margin-top: 0;
+    
+    @include mq('md') {
+        margin-top: myrem(20);
+    }
 }
 
 .footer-nav__line {
     border-bottom: 1px solid $white;
-    padding-bottom: myrem(12);
+    padding-bottom: myrem(10);
     display: block;
 }
 
 .footer-nav__detail {
-    margin-top: myrem(19);
+    margin-top: myrem(16);
 }
 
 .footer-nav__detail li {
     font-weight: $normal;
     display: flex;
     align-items: center;
+}
+.footer-nav__detail li+li {
+    margin-top: myrem(19);
 }
 
 .footer-nav__detail li::before {
@@ -60,12 +126,22 @@
     display: flex;
 }
 
+.footer-nav__detail--block li+li {
+    @include mq('md') {
+        margin-top: myrem(2);
+    }
+}
+
 .footer-nav__detail--grid {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     grid-auto-flow: column;
     gap: 19px 73px; //縦幅 横幅
     padding-right: myrem(20);
+
+    @include mq('md') {
+        gap: myrem(2) 0;
+    }
 }
 
 .footer-nav__detail--grid li+li {

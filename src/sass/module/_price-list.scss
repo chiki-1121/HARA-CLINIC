@@ -7,9 +7,13 @@
     text-align: center;
     font-size: myrem(20);
     letter-spacing: 0.03em;
-    line-height: calc(62 / 20);
     font-weight: $bold;
     margin-bottom: 0;
+    padding: myrem(14);
+
+    @include mq('md') {
+        font-size: myrem(16);
+    }
 }
 
 .price-list__major-heading {
@@ -22,10 +26,23 @@
     width: calc(400 / 1200 * 100%);
     display: flex;
     align-items: center;
-    padding-left: myrem(100);
+    padding-left: myrem(68);
+    text-align: center;
+
+    @include mq('md') {
+        width: 30%;
+        padding-left: 0;
+        font-size: myrem(14);
+        justify-content: center;
+    }
 }
 .price-list__major-heading>div>dd {
     width: calc(800 / 1200 * 100%);
+
+    @include mq('md') {
+        flex: 1;
+        font-size: myrem(14);
+    }
 }
 
 
@@ -45,7 +62,11 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     // gap: 40px 36px; //縦幅 横幅
-    padding: myrem(43) 0;
+    padding: myrem(37) 0;
+
+    @include mq('md') {
+        padding: myrem(20) 0;
+    }
 }
 
 .price-list__sub-heading div:not(:last-child) {
@@ -55,4 +76,8 @@
 .price-list__sub-heading dt,
 .price-list__sub-heading dd {
     text-align: center;
+    
+    @include mq('md') {
+        font-size: myrem(14);
+    }
 }

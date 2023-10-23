@@ -19,6 +19,11 @@
     width: myrem(288);
     height: myrem(288);
     border-radius: myrem(150);
+
+    @include mq('md') {
+        width: myrem(180);
+        height: myrem(180);
+    }
 }
 
 .mode-item__number {
@@ -27,8 +32,14 @@
     line-height: calc(39 / 32);
     font-weight: $bold;
     color: $white;
-    border-bottom: 4px solid $white;
+    border-bottom: 2px solid $white;
     padding-bottom: myrem(10);
+    margin-top: myrem(-17);
+
+    @include mq('md') {
+        font-size: myrem(20);
+        padding-bottom: myrem(5);
+    }
 }
 
 .mode-item__title {
@@ -39,10 +50,20 @@
     font-weight: $bold;
     color: $white;
     margin-top: myrem(31);
+
+    @include mq('md') {
+        margin-top: myrem(15);
+        font-size: myrem(20);
+        text-align: center;
+    }
 }
 
 .mode-item__text {
     margin-top: myrem(21);
     font-size: myrem(14);
     line-height: calc(28 / 14);
+
+    @include mq('md') {
+        line-height: 1.5;
+    }
 }

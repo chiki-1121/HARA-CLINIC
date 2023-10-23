@@ -4,8 +4,10 @@
 
 .pc-nav__items {
     display: flex;
-    margin-top: myrem(17);
+    margin-top: myrem(4);
     justify-content: center;
+    max-width: myrem(1518);
+    margin-inline: auto;
 }
 
 .pc-nav__item {
@@ -19,8 +21,9 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding-left: min(1.5vw, myrem(83));
-    padding-right: min(1.5vw, myrem(83));
+    padding-left: clamp(1.25rem, -1.205rem + 5.114vw, 5.188rem);
+    padding-right: clamp(1.25rem, -1.205rem + 5.114vw, 5.188rem);
+    // padding: 0 myrem(83);
     height: inherit;
 }
 
