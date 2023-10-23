@@ -1,4 +1,4 @@
-@use "global" as *;
+@use "global"as *;
 
 .footer-nav {
     display: flex;
@@ -9,7 +9,7 @@
     }
 }
 
-.footer-nav__box{
+.footer-nav__box {
     @include mq('md') {
         margin-top: myrem(30);
     }
@@ -38,6 +38,7 @@
     font-size: myrem(14);
     font-weight: $bold;
     line-height: calc(17 / 14);
+    height: fit-content;
 }
 
 .footer-nav__box li+li {
@@ -92,7 +93,7 @@
 
 .footer-nav__list>li+li {
     margin-top: 0;
-    
+
     @include mq('md') {
         margin-top: myrem(20);
     }
@@ -113,6 +114,7 @@
     display: flex;
     align-items: center;
 }
+
 .footer-nav__detail li+li {
     margin-top: myrem(19);
 }

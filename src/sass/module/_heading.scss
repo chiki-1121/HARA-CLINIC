@@ -23,12 +23,16 @@
 }
 
 .heading__title span{
-    display: block;
+    // display: block;
     font-family: $sub-font;
     font-size: myrem(44);
     line-height: calc(54 / 44);
     font-weight: $semibold;
     margin-top: myrem(13);
+    padding-right: myrem(30);
+
+    display: flex;
+    justify-content: center;
 
     @include mq('md') {
         font-size: myrem(30);
@@ -45,11 +49,12 @@
     width: myrem(7);
     height: myrem(50);
     background-color: $blue;
-    transform: rotate(30deg);
+    transform: rotate(27deg);
     display: inline-block;
     // position: absolute;
     bottom: myrem(5);
     left: 37%;
+    margin-right: myrem(33);
 
     @include mq('md') {
         height: 30px;
