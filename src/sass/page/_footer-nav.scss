@@ -11,7 +11,7 @@
 
 .footer-nav__box {
     @include mq('md') {
-        margin-top: myrem(30);
+        margin-top: myrem(40);
     }
 }
 
@@ -19,7 +19,7 @@
     @include mq('md') {
         display: grid;
         grid-auto-flow: column;
-        gap: myrem(10) 0;
+        gap: myrem(30) 0;
     }
 }
 
@@ -130,7 +130,7 @@
 
 .footer-nav__detail--block li+li {
     @include mq('md') {
-        margin-top: myrem(2);
+        margin-top: myrem(20);
     }
 }
 
@@ -142,7 +142,7 @@
     padding-right: myrem(20);
 
     @include mq('md') {
-        gap: myrem(2) 0;
+        gap: myrem(20) 0;
     }
 }
 

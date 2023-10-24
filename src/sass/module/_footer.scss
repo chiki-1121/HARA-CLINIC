@@ -22,6 +22,10 @@
 
 .footer__top {
     width: calc(248 / 1200 * 100%);
+
+    @include mq('md') {
+        width: 100%;
+    }
 }
 
 .footer_logo {
