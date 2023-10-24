@@ -23,7 +23,6 @@
 }
 
 .heading__title span{
-    // display: block;
     font-family: $sub-font;
     font-size: myrem(44);
     line-height: calc(54 / 44);
@@ -51,7 +50,6 @@
     background-color: $blue;
     transform: rotate(27deg);
     display: inline-block;
-    // position: absolute;
     bottom: myrem(5);
     left: 37%;
     margin-right: myrem(33);
@@ -65,7 +63,6 @@
 
 .heading__category {
     display: grid;
-    // grid-template-columns: repeat(4, 1fr);
     grid-template-columns: repeat(auto-fit, myrem(285));
     place-content: center;
     gap: myrem(23) myrem(20); //縦幅 横幅

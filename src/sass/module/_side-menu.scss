@@ -103,11 +103,6 @@
 .side-menu__line img {
     width: myrem(55);
     height: myrem(53);
-
-    @include mq('md') {
-        // height: auto;
-        // width: 30%;
-    }
 }
 
 .side-menu__online {
@@ -182,10 +177,6 @@ margin-top: myrem(10);
     width: myrem(38);
     height: myrem(38);
 
-    @include mq('md') {
-        // height: auto;
-        // width: 30%;
-    }
 }
 
 .side-menu__tel p {

@@ -61,7 +61,6 @@
     position: absolute;
     display: inline-block;
     padding-left: 20px;
-    // color: #333;
     text-decoration: none;
     right: 6%;
 
@@ -79,7 +78,6 @@
     position: absolute;
     top: 50%;
     left: myrem(-18);
-    // margin-top: -9px;
 }
 
 .price__button span:after {
@@ -92,43 +90,5 @@
     position: absolute;
     top: myrem(10);
     left: myrem(-10);
-    // margin-top: -4px;
     transform: rotate(45deg);
 }
-
-// .price__button span {
-//     display: inline-block;
-//     vertical-align: middle;
-//     padding: myrem(11) myrem(13);
-//     color: $white;
-//     line-height: 1;
-//     position: relative;
-//     width: myrem(32);
-//     height: myrem(32);
-//     transform: translateX(-25%) rotate(45deg);
-//     background: $blue;
-//     border-radius: myrem(150);
-// }
-
-// .price__button span::before,
-// .price__button span::after {
-//     content: '';
-//     position: absolute;
-//     background: currentColor;
-//     border-radius: 0.1em;
-// }
-
-// .price__button span::before {
-//     top: 0;
-//     left: 0;
-//     right: 0;
-//     height: 0.1em;
-// }
-
-// .price__button span::after {
-//     top: 0;
-//     right: 0;
-//     bottom: 0;
-//     width: 0.1em;
-// }
-

@@ -51,17 +51,9 @@
     border-bottom: 1px solid #D0D0D0;
 }
 
-// .price-list__major-heading div>dt {
-//     line-height: calc(30 / 16);
-//     font-weight: $bold;
-// }
-
-.price-list__sub-heading {}
-
 .price-list__sub-heading div {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    // gap: 40px 36px; //縦幅 横幅
     padding: myrem(37) 0;
 
     @include mq('md') {

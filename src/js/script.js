@@ -25,7 +25,20 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         }
     });
 
-    
+    //ドロワーメニューを開いたまま画面幅が768px以上になった時にメニューを閉じる
+    $(window).resize(function () { // ウィンドウがリサイズされたら
+                var $window = $(this).width();
+                var bp = 767;
+                if ($window > bp) {
+                if ($(".sp-nav").show()){
+                                $(".sp-nav").hide();
+                                // $(".sp-nav").css("display","none");
+                                $(".js-hamburger").removeClass("is-active"); // ×印をハンバーガーに戻す
+                        $("body").removeClass("is-active");
+                    } else {
+                        //何もしない
+                    }
+}});
 
 });
 //767以下のみtelリンク
@@ -36,7 +49,7 @@ function setHrefBasedOnScreenWidth() {
     if (window.innerWidth >= 768) {
         telLink.href = "#footer";
     } else {
-        telLink.href = "tel:0123456789";
+        telLink.href = "tel:000000000";
     }
 }
 

@@ -9,23 +9,9 @@
     }
 }
 
-// .about__inner.inner {
-//     padding-left: myrem(10);
-//     padding-right: myrem(10);
-// }
-
-.inner {}
-
-.about__title {}
-
-.section-title {}
-
-.section-title--reverse {}
-
 .about__flex {
     display: flex;
     margin-top: myrem(35);
-    // width: 100vw;
     margin-right: min(0px, calc(50% - 40vw));
 
     @include mq('md') {
