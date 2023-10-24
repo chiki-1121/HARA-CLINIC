@@ -1,7 +1,8 @@
-@use "global" as *;
+@use "global"as *;
 
 .recommendation-layout {
     margin-top: myrem(106);
     margin-left: auto;
-    width: min(95vw,myrem(1200));
+    margin-right: auto;
+    width: min(95vw, myrem(1200));
 }
